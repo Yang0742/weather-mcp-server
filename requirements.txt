@@ -1,1 +1,3 @@
-# Python 依赖
+# Python 依赖requests
+fastmcp
+requests
