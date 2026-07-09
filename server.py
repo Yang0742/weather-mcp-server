@@ -1,7 +1,9 @@
 # MCP 服务器主文件
 """天气查询 MCP 服务器"""
 
-import os, json, requests
+import os
+import json
+import requests
 from datetime import datetime
 from typing import Dict, Any
 from hello_agents.protocols import MCPServer
