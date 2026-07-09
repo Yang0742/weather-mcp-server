@@ -1,3 +1,3 @@
 fastmcp
 requests
-hello_agents==0.2.2
+hello-agents==0.2.2
