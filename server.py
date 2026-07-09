@@ -79,5 +79,10 @@ weather_server.add_tool(list_supported_cities)
 weather_server.add_tool(get_server_info)
 
 if __name__ == "__main__":
-    # 启动 MCP 服务器
-    weather_server.run()
+    # Render / 云服务器使用 HTTP 传输，不能使用默认 stdio
+    port = int(os.environ.get("PORT", 8000))
+    weather_server.run(
+        transport="streamable-http",
+        host="0.0.0.0",
+        port=port
+    )
